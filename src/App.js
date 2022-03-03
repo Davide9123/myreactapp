@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Post from './FacebookPost';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// PROPS
+
+
+// JSX
+class App extends React.Component {
+  render(){ return (
+    <div className="Container">
+      {/* <h1>My React App</h1> */}
+      
+        {/* <Post author="Andrea" description="Che puzza"/>
+        <Post author="Jim" description="Che puzza 2"/>
+        <Post author="Bob" description="Che polpetta"/>
+        <Post author="John" description="Che pizza è la vita?"/>
+        <Post author="Bilal" description="Che bello"/> */}
+      <h3>Counter: {4}</h3> <span>----</span>
+      <button>Aumenta</button>
     </div>
   );
 }
-
+}
 export default App;
